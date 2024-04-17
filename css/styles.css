@@ -1,484 +1,465 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Importa la fuente Montserrat desde Google Fonts */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Establece el margen exterior de todos los elementos como 0 */
+    padding: 0; /* Establece el padding de todos los elementos como 0 */
+    box-sizing: border-box; /* Hace que el modelo de caja incluya el padding y el borde en el ancho y alto total */
+    font-family: 'Roboto', sans-serif; /* Establece la familia de fuentes predeterminada para todos los elementos */
 }
 
 html {
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* Establece la altura del elemento HTML al 100% del viewport height */
+    width: 100vw; /* Establece el ancho del elemento HTML al 100% del viewport width */
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    height: 100%; /* Establece la altura del cuerpo al 100% */
+    width: 100%; /* Establece el ancho del cuerpo al 100% */
 }
 
-
-
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    display: flex; /* Establece el contenedor como flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+    height: 100%; /* Establece la altura del contenedor al 100% */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #000;
-    padding: 4px 8px;
+    display: flex; /* Establece la navegación como flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+    align-items: center; /* Centra los elementos verticalmente */
+    background: #000; /* Establece el fondo de la barra de navegación como negro */
+    padding: 4px 8px; /* Añade relleno a la barra de navegación */
 }
 
 .nav-list {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    padding: 8px 10px;
+    display: flex; /* Establece la lista de navegación como flexbox */
+    list-style: none; /* Elimina los estilos de la lista */
+    gap: 10px; /* Establece el espacio entre los elementos de la lista */
+    padding: 8px 10px; /* Añade relleno a la lista de navegación */
 }
 
 .nav-list li {
-    font-size: 12px;
-    color: white;
-
+    font-size: 12px; /* Establece el tamaño de fuente de los elementos de la lista */
+    color: white; /* Establece el color de texto de los elementos de la lista */
 }
 
 .nav-list li:hover {
-    color: #444;
+    color: #444; /* Cambia el color de texto al pasar el cursor sobre los elementos de la lista */
 }
 
 .nav-icons {
-    display: flex;
-    gap: 10px;
-    padding: 5px;
+    display: flex; /* Establece los iconos de navegación como flexbox */
+    gap: 10px; /* Establece el espacio entre los iconos */
+    padding: 5px; /* Añade relleno a los iconos de navegación */
 }
 
 .nav-icons div {
-    display: flex;
-    gap: 5px;
-    font-size: 12px;
-    align-items: center;
+    display: flex; /* Establece los elementos dentro de los iconos de navegación como flexbox */
+    gap: 5px; /* Establece el espacio entre los elementos dentro de los iconos */
+    font-size: 12px; /* Establece el tamaño de fuente de los elementos dentro de los iconos */
+    align-items: center; /* Centra los elementos verticalmente */
 }
 
 .nav-icons div img {
-    width: 20px;
-    height: 20px;
+    width: 20px; /* Establece el ancho de las imágenes dentro de los iconos */
+    height: 20px; /* Establece la altura de las imágenes dentro de los iconos */
 }
 
 a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+    color: white; /* Establece el color de texto de los enlaces */
 }
 
-/* header */
-
+/* Estilos para el encabezado */
 header {
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Establece el encabezado como flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+    align-items: center; /* Centra los elementos horizontalmente */
 }
 
 .header-section {
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
+    display: flex; /* Establece la sección del encabezado como flexbox */
+    width: 80%; /* Establece el ancho de la sección del encabezado */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 40px 0; /* Añade relleno a la sección del encabezado */
 }
 
 .header-section button {
-    background-color: #43B02A;
-    color: #fff;
-    padding: 10px 15px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    background-color: #43B02A; /* Establece el color de fondo del botón */
+    color: #fff; /* Establece el color de texto del botón */
+    padding: 10px 15px; /* Añade relleno al botón */
+    font-weight: 700; /* Establece el peso de la fuente del botón */
+    letter-spacing: 2px; /* Establece el espaciado entre letras del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Establece el radio de borde del botón */
+    font-size: 14px; /* Establece el tamaño de fuente del botón */
 }
-
-/* header list */
 .header-section-list {
-    display: flex;
-    width: 80%;
+    display: flex; /* Establece la lista dentro de la sección del encabezado como flexbox */
+    width: 80%; /* Establece el ancho de la lista */
 }
 
 .header-section-list ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    list-style: none;
-    font-size: 13px;
+    width: 100%; /* Establece el ancho de la lista al 100% */
+    display: flex; /* Establece la lista como flexbox */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos de la lista */
+    gap: 10px; /* Establece el espacio entre los elementos de la lista */
+    list-style: none; /* Elimina los estilos de la lista */
+    font-size: 13px; /* Establece el tamaño de fuente de los elementos de la lista */
 }
 
 .header-section-list ul li {
-    cursor: pointer;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
+    cursor: pointer; /* Cambia el cursor al pasar sobre los elementos de la lista */
+    font-weight: 400; /* Establece el peso de la fuente de los elementos de la lista */
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes de los elementos de la lista */
 }
 
 .header-section-list ul li:hover {
-    color: #aaa;
+    color: #aaa; /* Cambia el color de texto al pasar el cursor sobre los elementos de la lista */
 }
 
-/* Slider */
-
+/* Estilos para el slider */
 .slider {
-    display: flex;
-    width: 100%;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0;
-    padding: 40px;
-    background: linear-gradient(to right, #222 0%, #333 25%, #fff 55%, #fff 75%, #fff 100%);
+    display: flex; /* Establece el slider como flexbox */
+    width: 100%; /* Establece el ancho del slider al 100% */
+    height: 400px; /* Establece la altura del slider en 400px */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin: 40px 0; /* Establece el margen superior e inferior del slider */
+    padding: 40px; /* Añade relleno al slider */
+    background: linear-gradient(to right, #222 0%, #333 25%, #fff 55%, #fff 75%, #fff 100%); /* Establece un degradado de fondo */
 }
-
 
 .slider div {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    text-align: start;
+    display: flex; /* Establece los elementos dentro del slider como flexbox */
+    gap: 20px; /* Establece el espacio entre los elementos dentro del slider */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-direction: column; /* Establece la dirección de los elementos dentro del slider como columna */
+    width: 100%; /* Establece el ancho de los elementos dentro del slider al 100% */
+    height: 100%; /* Establece la altura de los elementos dentro del slider al 100% */
+    color: #fff; /* Establece el color de texto de los elementos dentro del slider */
+    text-align: start; /* Establece la alineación del texto a la izquierda */
 }
 
 .slider div h3 {
-    font-size: 40px;
-    font-weight: 200;
-    margin-top: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-size: 40px; /* Establece el tamaño de fuente del título dentro del slider */
+    font-weight: 200; /* Establece el peso de la fuente del título dentro del slider */
+    margin-top: 30px; /* Establece el margen superior del título dentro del slider */
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes del título dentro del slider */
+    font-weight: 300; /* Establece el peso de la fuente del título dentro del slider */
 }
 
 .slider div b {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes del texto en negrita dentro del slider */
 }
 
 .slider .container-button {
-    display: flex;
-    justify-content: start;
+    display: flex; /* Establece el contenedor del botón dentro del slider como flexbox */
+    justify-content: start; /* Alinea el botón al principio */
 }
 
 .slider div button {
-    color: #fff;
-    background-color: #43B02A;
-    padding: 12px 16px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 25px;
+    color: #fff; /* Establece el color de texto del botón dentro del slider */
+    background-color: #43B02A; /* Establece el color de fondo del botón dentro del slider */
+    padding: 12px 16px; /* Añade relleno al botón dentro del slider */
+    font-size: 14px; /* Establece el tamaño de fuente del botón dentro del slider */
+    font-weight: 700; /* Establece el peso de la fuente del botón dentro del slider */
+    letter-spacing: 2px; /* Establece el espaciado entre letras del botón dentro del slider */
+    border: none; /* Elimina el borde del botón dentro del slider */
+    border-radius: 5px; /* Establece el radio de borde del botón dentro del slider */
+    margin-top: 25px; /* Establece el margen superior del botón dentro del slider */
 }
 
 .slider div img {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
+    width: 70%; /* Establece el ancho de la imagen dentro del slider */
+    height: 70%; /* Establece la altura de la imagen dentro del slider */
+    object-fit: contain; /* Escala la imagen para que se ajuste dentro de su contenedor manteniendo la relación de aspecto */
 }
 
-
-/* Main */
-
+/* Estilos para la sección principal */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-
+    display: flex; /* Establece la sección principal como flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding-bottom: 50px; /* Añade relleno en la parte inferior de la sección principal */
 }
 
+/* Estilos para el formulario dentro de la sección principal */
 main .main-section-form {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    padding: 30px 50px;
-    background-color: #eeeeef;
-    border-radius: 8px;
-    border: #ccc 1px solid;
-    margin-bottom: 50px;
+    display: flex; /* Establece el formulario como flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del formulario */
+    width: 80%; /* Establece el ancho del formulario */
+    padding: 30px 50px; /* Añade relleno al formulario */
+    background-color: #eeeeef; /* Establece el color de fondo del formulario */
+    border-radius: 8px; /* Establece el radio de borde del formulario */
+    border: #ccc 1px solid; /* Establece el borde del formulario */
+    margin-bottom: 50px; /* Establece el margen inferior del formulario */
 }
 
 main .main-section-form p {
-    font-size: 25px;
-    font-weight: lighter;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
+    font-size: 25px; /* Establece el tamaño de fuente del párrafo dentro del formulario */
+    font-weight: lighter; /* Establece el peso de la fuente del párrafo dentro del formulario */
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes del párrafo dentro del formulario */
+    font-weight: 200; /* Establece el peso de la fuente del párrafo dentro del formulario */
 }
 
 main .main-section-form form {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+    display: flex; /* Establece el formulario como flexbox */
+    width: 50%; /* Establece el ancho del formulario al 50% */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del formulario */
 }
 
 main .main-section-form form input {
-    padding: 6px 10px;
-    width: 60%;
-    border: #ccc 1px solid;
-    border-radius: 5px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    padding: 6px 10px; /* Añade relleno a los campos de entrada del formulario */
+    width: 60%; /* Establece el ancho de los campos de entrada del formulario al 60% */
+    border: #ccc 1px solid; /* Establece el borde de los campos de entrada del formulario */
+    border-radius: 5px; /* Establece el radio de borde de los campos de entrada del formulario */
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes de los campos de entrada del formulario */
+    font-weight: 400; /* Establece el peso de la fuente de los campos de entrada del formulario */
 }
 
 main .main-section-form form button {
-    background: #6EAB61;
-    color: #fff;
-    border: none;
-    padding: 10px 0;
-    width: 30%;  
-    border-radius: 6px;
-    font-weight: 600;
+    background: #6EAB61; /* Establece el color de fondo del botón dentro del formulario */
+    color: #fff; /* Establece el color de texto del botón dentro del formulario */
+    border: none; /* Elimina el borde del botón dentro del formulario */
+    padding: 10px 0; /* Añade relleno al botón dentro del formulario */
+    width: 30%; /* Establece el ancho del botón dentro del formulario al 30% */
+    border-radius: 6px; /* Establece el radio de borde del botón dentro del formulario */
+    font-weight: 600; /* Establece el peso de la fuente del botón dentro del formulario */
 }
 
-
-/* Slider 2 */
+/* Estilos para el segundo slider */
 .slider-2 {
-    display: flex;
-    justify-content: center;
-    width: 80%;
+    display: flex; /* Establece el segundo slider como flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    width: 80%; /* Establece el ancho del segundo slider al 80% */
 }
 
 .slider-2 div {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    display: flex; /* Establece los elementos dentro del segundo slider como flexbox */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos dentro del segundo slider */
+    width: 100%; /* Establece el ancho de los elementos dentro del segundo slider al 100% */
 }
-
-
 .slider-2 div article {
-    list-style: none;
-    width: 300px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    list-style: none; /* Elimina los estilos de lista de los elementos article */
+    width: 300px; /* Establece el ancho de los elementos article */
+    height: 400px; /* Establece la altura de los elementos article */
+    display: flex; /* Establece los elementos article como flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos article como columna */
+    align-items: center; /* Centra los elementos article horizontalmente */
+    gap: 15px; /* Establece el espacio entre los elementos article */
+    padding: 15px; /* Añade relleno a los elementos article */
+    border-top-left-radius: 20px; /* Establece el radio de borde superior izquierdo de los elementos article */
+    border-top-right-radius: 20px; /* Establece el radio de borde superior derecho de los elementos article */
 }
 
 .article-shadow:hover {
-    box-shadow: -3px 3px 6px #ccc;
-    transition: all .2s;
+    box-shadow: -3px 3px 6px #ccc; /* Agrega una sombra al pasar el cursor sobre los elementos con la clase article-shadow */
+    transition: all .2s; /* Agrega una transición suave a todas las propiedades */
 }
 
 .slider-2 div article figure {
-    width: 100%;
-    height: 180px;
-    border-radius: 20px;
+    width: 100%; /* Establece el ancho de las figuras dentro de los elementos article al 100% */
+    height: 180px; /* Establece la altura de las figuras dentro de los elementos article */
+    border-radius: 20px; /* Establece el radio de borde de las figuras dentro de los elementos article */
 }
 
 .slider-2 div article figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+    width: 100%; /* Establece el ancho de las imágenes dentro de las figuras al 100% */
+    height: 100%; /* Establece la altura de las imágenes dentro de las figuras al 100% */
+    object-fit: cover; /* Escala la imagen para que cubra toda la caja */
+    border-radius: 15px; /* Establece el radio de borde de las imágenes dentro de las figuras */
 }
 
 .slider-2 div article div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: flex; /* Establece los elementos div dentro de los elementos article como flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos div como columna */
+    gap: 10px; /* Establece el espacio entre los elementos div */
 }
 
 .slider-2 div article div h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color:#333
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes del título h3 dentro de los elementos article */
+    font-weight: 500; /* Establece el peso de la fuente del título h3 dentro de los elementos article */
+    color:#333; /* Establece el color de texto del título h3 dentro de los elementos article */
 }
 
 .slider-2 div article div p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes del párrafo dentro de los elementos article */
+    font-size: 13px; /* Establece el tamaño de fuente del párrafo dentro de los elementos article */
 }
 
-
-/* Article */
+/* Estilos para los artículos */
 .articles {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-    width: 100%;
+    display: flex; /* Establece los artículos como flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 50px 0; /* Añade relleno a los artículos */
+    width: 100%; /* Establece el ancho de los artículos al 100% */
 }
 
 .articles div {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: space-around;
-    gap: 40px;
-    /* font-family: "Montserrat", sans-serif; */
+    display: flex; /* Establece los elementos div dentro de los artículos como flexbox */
+    flex-wrap: wrap; /* Permite que los elementos div dentro de los artículos se envuelvan en múltiples líneas si es necesario */
+    width: 80%; /* Establece el ancho de los elementos div dentro de los artículos al 80% */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos div dentro de los artículos */
+    gap: 40px; /* Establece el espacio entre los elementos div dentro de los artículos */
 }
 
 .articles article {
-    width: 400px;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
+    width: 400px; /* Establece el ancho de los artículos al 400px */
+    height: 240px; /* Establece la altura de los artículos al 240px */
+    display: flex; /* Establece los artículos como flexbox */
+    flex-direction: column; /* Establece la dirección de los artículos como columna */
+    justify-content: center; /* Centra los elementos verticalmente dentro de los artículos */
+    align-items: center; /* Centra los elementos horizontalmente dentro de los artículos */
+    gap: 20px; /* Establece el espacio entre los elementos dentro de los artículos */
+    text-align: center; /* Establece la alineación del texto dentro de los artículos al centro */
 }
 
 .articles img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: left;
-    border-radius: 20px;
+    width: 100%; /* Establece el ancho de las imágenes dentro de los artículos al 100% */
+    height: 100%; /* Establece la altura de las imágenes dentro de los artículos al 100% */
+    object-fit: cover; /* Escala la imagen para que cubra toda la caja */
+    object-position: left; /* Establece la posición de la imagen dentro del artículo a la izquierda */
+    border-radius: 20px; /* Establece el radio de borde de las imágenes dentro de los artículos */
 }
 
 .articles article h3, p, button {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes para los elementos h3, p y button dentro de los artículos */
 }
 
 .articles article h3 {
-    font-weight: 400;
+    font-weight: 400; /* Establece el peso de la fuente del título h3 dentro de los artículos */
 }
 
 .articles article p {
-    font-weight: 300;
+    font-weight: 300; /* Establece el peso de la fuente del párrafo dentro de los artículos */
 }
 
 .articles article button {
-    color: #fff;
-    background-color: #43B02A;
-    padding: 15px 0px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 25px;
-    width: 70%;
+    color: #fff; /* Establece el color de texto de los botones dentro de los artículos */
+    background-color: #43B02A; /* Establece el color de fondo de los botones dentro de los artículos */
+    padding: 15px 0px; /* Añade relleno a los botones dentro de los artículos */
+    font-size: 14px; /* Establece el tamaño de fuente de los botones dentro de los artículos */
+    font-weight: 700; /* Establece el peso de la fuente de los botones dentro de los artículos */
+    letter-spacing: 2px; /* Establece el espaciado entre letras de los botones dentro de los artículos */
+    border: none; /* Elimina el borde de los botones dentro de los artículos */
+    border-radius: 5px; /* Establece el radio de borde de los botones dentro de los artículos */
+    margin-top: 25px; /* Establece el margen superior de los botones dentro de los artículos */
+    width: 70%; /* Establece el ancho de los botones dentro de los artículos al 70% */
 }
 
 .img-shadow {
-    box-shadow: 3px 3px 6px #ccc;
+    box-shadow: 3px 3px 6px #ccc; /* Agrega una sombra a los elementos con la clase img-shadow */
 }
 
-/* slider bottom */
-
+/* Estilos para los artículos en la parte inferior */
 .article-bottom {
-    margin-top: 30px;
+    margin-top: 30px; /* Establece el margen superior de los artículos en la parte inferior */
 }
 
 main img:hover {
-    transform: scale(1.05);
-    transition: all .2s;
+    transform: scale(1.05); /* Aplica un efecto de escala al pasar el cursor sobre las imágenes dentro de la sección principal */
+    transition: all .2s; /* Agrega una transición suave a todas las propiedades */
 }
 
-/* footer */
+/* Estilos para el pie de página */
 footer {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    gap: 30px;
-    background-color: #333;
-    color: #fff;
+    display: flex; /* Establece el pie de página como flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+    padding: 30px; /* Añade relleno al pie de página */
+    gap: 30px; /* Establece el espacio entre los elementos del pie de página */
+    background-color: #333; /* Establece el color de fondo del pie de página */
+    color: #fff; /* Establece el color de texto del pie de página */
 }
 
 footer .section-list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
+    display: flex; /* Establece la sección de lista del pie de página como flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos de la sección de lista del pie de página */
+    padding: 0 30px; /* Añade relleno a la sección de lista del pie de página */
 }
 
 footer .section-list .container-ul {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Establece el contenedor de la lista dentro de la sección de lista del pie de página como flexbox */
+    gap: 20px; /* Establece el espacio entre los elementos dentro del contenedor de la lista */
 }
 
 footer ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    list-style: none; /* Elimina los estilos de lista de las listas dentro del pie de página */
+    display: flex; /* Establece las listas dentro del pie de página como flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+    gap: 10px; /* Establece el espacio entre los elementos dentro de las listas del pie de página */
 }
 
 footer h2 {
- font-family: "Montserrat", sans-serif;
- font-weight: 400;
- padding-bottom: 10px;
- font-size: 18px;
+ font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes de los títulos h2 del pie de página */
+ font-weight: 400; /* Establece el peso de la fuente de los títulos h2 del pie de página */
+ padding-bottom: 10px; /* Añade relleno a la parte inferior de los títulos h2 del pie de página */
+ font-size: 18px; /* Establece el tamaño de fuente de los títulos h2 del pie de página */
 }
 
 footer li {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes de los elementos de la lista del pie de página */
+    font-size: 12px; /* Establece el tamaño de fuente de los elementos de la lista del pie de página */
 }
 
 footer .div-icons button {
-    background: #fff;
-    color: #000;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 3px;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    background: #fff; /* Establece el color de fondo de los botones dentro del pie de página */
+    color: #000; /* Establece el color de texto de los botones dentro del pie de página */
+    border: none; /* Elimina el borde de los botones dentro del pie de página */
+    padding: 15px 20px; /* Añade relleno a los botones dentro del pie de página */
+    border-radius: 3px; /* Establece el radio de borde de los botones dentro del pie de página */
+    font-size: 14px; /* Establece el tamaño de fuente de los botones dentro del pie de página */
+    font-weight: 300; /* Establece el peso de la fuente de los botones dentro del pie de página */
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes de los botones dentro del pie de página */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones dentro del pie de página */
+    display: flex; /* Establece los botones dentro del pie de página como flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos de los botones dentro del pie de página */
+    gap: 5px; /* Establece el espacio entre los elementos dentro de los botones dentro del pie de página */
 }
 
 footer .div-icons button figure {
-    width: 20px;
-    height: 20px;
+    width: 20px; /* Establece el ancho de las figuras dentro de los botones del pie de página */
+    height: 20px; /* Establece la altura de las figuras dentro de los botones del pie de página */
 }
 
 footer .div-icons button figure img {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Establece el ancho de las imágenes dentro de las figuras de los botones del pie de página al 100% */
+    height: 100%; /* Establece la altura de las imágenes dentro de las figuras de los botones del pie de página al 100% */
 }
 
 footer .div-icons div {
-    display: flex;
-    gap: 10px;
-    margin: 15px;
+    display: flex; /* Establece los elementos div dentro de los botones del pie de página como flexbox */
+    gap: 10px; /* Establece el espacio entre los elementos dentro de los elementos div dentro de los botones del pie de página */
+    margin: 15px; /* Establece el margen alrededor de los elementos div dentro de los botones del pie de página */
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 30px; /* Establece el ancho de los iconos */
+    height: 30px; /* Establece la altura de los iconos */
 }
 
 .icon img {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Establece el ancho de las imágenes de los iconos al 100% */
+    height: 100%; /* Establece la altura de las imágenes de los iconos al 100% */
 }
 
 footer .section-p {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0 30px;
+    display: flex; /* Establece la sección de párrafos del pie de página como flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+    gap: 10px; /* Establece el espacio entre los elementos dentro de la sección de párrafos del pie de página */
+    padding: 0 30px; /* Añade relleno a la sección de párrafos del pie de página solo a los lados */
 }
 
 footer .section-p p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    text-align: center;
+    font-family: "Montserrat", sans-serif; /* Establece la familia de fuentes de los párrafos dentro del pie de página */
+    font-size: 12px; /* Establece el tamaño de fuente de los párrafos dentro del pie de página */
+    text-align: center; /* Establece la alineación del texto de los párrafos dentro del pie de página al centro */
 }
 
 button:hover {
-    opacity: 0.8;
-    cursor: pointer;
+    opacity: 0.8; /* Reduce la opacidad al pasar el cursor sobre los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
 }
-
-
 
